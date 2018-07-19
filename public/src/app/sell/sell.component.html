@@ -1,0 +1,8 @@
+<h1>Sell ShintoCoins</h1>
+<p>ShintoCoin Value: $1.00</p>
+<p>Number of ShintoCoins Owned: {{ coins }}</p>
+<form (submit)="onSellFromService()">
+	{{ Sell | json }}
+	<input type="number" name="Sell.amount" [(ngModel)]="Sell.amount">
+	<input class="btn btn-secondary ml-5" type="submit" value="sell">
+</form>
